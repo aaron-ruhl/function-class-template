@@ -72,11 +72,3 @@ class _Analysis():
         return results
         
     '''Analysis Methods Go Here'''
-    
-    def mdpt(self,n,a,b):
-        h=(b-a)/n
-        x=a+h/2
-        for i in range(n):
-            s=s+self.calc(x)[0] # calc returns a list
-            x=x+h
-        return s*h
